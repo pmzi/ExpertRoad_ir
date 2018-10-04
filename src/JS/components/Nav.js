@@ -1,6 +1,6 @@
 const React = require('react');
 
-class Layout extends React.Component{
+class Nav extends React.Component{
 
     render(){
         return (<nav className='nav'>
@@ -60,4 +60,4 @@ class Layout extends React.Component{
 
 }
 
-module.exports = Layout;
+module.exports = Nav;
