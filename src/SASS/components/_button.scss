@@ -1,3 +1,21 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.button{
+    padding: 1.2rem 1rem;
+    border: 0.2rem solid $brand-color;
+
+    user-select: none;
+
+    cursor: pointer;
+
+    &--filled, &:hover{
+        background-color: $brand-color;
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+
+}
