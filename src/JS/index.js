@@ -1,10 +1,8 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 
-const Layout = require('./components/Layout');
+const Nav = require('./components/Nav');
 
-const jsx = (<Layout>
-    <div></div>
-</Layout>);
+const jsx = (<Nav />);
 
 ReactDOM.render(jsx, document.querySelector("#app"));
