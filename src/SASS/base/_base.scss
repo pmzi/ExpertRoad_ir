@@ -7,6 +7,17 @@
  */
 html {
   box-sizing: border-box;
+  font-size: calc(100% * 0.625);
+  font-family: $font-family;
+}
+
+body{
+  margin: 0px;
+  overflow: hidden;
+}
+
+html, body{
+  height: 100%;
 }
 
 /**
@@ -28,8 +39,10 @@ a {
   color: $brand-color;
   text-decoration: none;
 
+  transition-duration: 0.3s;
+
   @include on-event {
     color: $text-color;
-    text-decoration: underline;
+    transition-duration: 0.3s;
   }
 }
