@@ -4,7 +4,9 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle:watch":"webpack -w",
+    "sass:compile":"node-sass src/SASS/main.scss dist/CSS/main.css | node-sass src/SASS/main.scss dist/CSS/main.css -w",
+    "start":" npm run bundle:watch | http-server -c-1"
   },
   "repository": {
     "type": "git",
