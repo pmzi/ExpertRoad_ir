@@ -1,0 +1,38 @@
+.aboutUs{
+    width: 100%;
+    min-height: 50rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container{
+        max-width: 116rem;
+        width: 100%;
+        display: flex;
+    }
+
+    &__contentWrapper{
+        width: 60%;
+    }
+
+    &__heading{
+        font-size: 3.6rem;
+    }
+
+    &__content{
+        line-height: 2.4rem;
+    }
+
+    &__logoWrapper{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo{
+        max-width: 100%;
+    }
+
+}
