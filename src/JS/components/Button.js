@@ -16,7 +16,7 @@ class Button extends React.Component{
 
         }
 
-        button = <button onClick={this.props.onClick} className={`button ${this.props.isFilled ? 'button--filled' : ''} ${this.props.className}`}>
+        button = <button onClick={this.props.onClick} className={`button ${this.props.isFilled ? 'button--filled' : ''} ${this.props.smallPaddingTop ? 'button--smallPaddingTop' : ''} ${this.props.className}`}>
             {this.props.text}
         </button>
 

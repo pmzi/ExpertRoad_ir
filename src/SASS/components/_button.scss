@@ -6,16 +6,27 @@
     padding: 1.2rem 1rem;
     border: 0.2rem solid $brand-color;
 
+    transition-duration: 0.5s;
+
     user-select: none;
 
     cursor: pointer;
 
     &--filled, &:hover{
         background-color: $brand-color;
+        color: white;
+    }
+
+    &--smallPaddingTop{
+        padding: 1rem 1rem;
     }
 
     &:active{
         transform: scale(0.95);
+    }
+
+    &:focus{
+        outline: none;
     }
 
 }
