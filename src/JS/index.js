@@ -6,6 +6,7 @@ const MainHeader = require('./components/MainHeader');
 const AboutUs = require('./components/AboutUs');
 const Features = require('./components/Features');
 const Courses = require('./components/Courses');
+const Departments = require('./components/Departments');
 
 const jsx = (<React.Fragment>
     <Nav />
@@ -13,6 +14,7 @@ const jsx = (<React.Fragment>
 <AboutUs />
 <Features />
 <Courses />
+<Departments />
 </React.Fragment>);
 
 ReactDOM.render(jsx, document.querySelector("#app"));
