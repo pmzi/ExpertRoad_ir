@@ -35,14 +35,26 @@
 
         &--twitter{
             background-image: url($base-url+'images/socials/twitter.png');
+
+            &:hover{
+                background-image: url($base-url+'images/socials/twitter-hover.png');
+            }
         }
 
         &--instagram{
             background-image: url($base-url+'images/socials/instagram.png');
+
+            &:hover{
+                background-image: url($base-url+'images/socials/instagram-hover.png');
+            }
         }
 
         &--telegram{
             background-image: url($base-url+'images/socials/telegram.png');
+
+            &:hover{
+                background-image: url($base-url+'images/socials/telegram-hover.png');
+            }
         }
 
     }
