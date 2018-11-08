@@ -6,7 +6,7 @@ class Courses extends React.Component{
 
     render(){
         return (
-            <section className='courses'>
+            <section id='courses' className='courses'>
                 <div className='courses__container layout'>
                      <header className='courses__header'>
                          <h4 className='courses__header-title'>

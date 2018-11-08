@@ -16,7 +16,7 @@ class Testimonials extends React.Component{
 
     render(){
         return (
-            <section className='testimonials'>
+            <section id='testimonials' className='testimonials'>
                 <div className='testimonials__container layout'>
                     <header className='testimonials__header'>
                         <h2 className='testimonials__header-title'>

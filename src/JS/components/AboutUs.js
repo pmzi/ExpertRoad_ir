@@ -6,7 +6,7 @@ class AboutUs extends React.Component{
 
     render(){
         return (
-            <section className='aboutUs'>
+            <section id='aboutUs' className='aboutUs'>
 
                 <div className='aboutUs__container'>
 

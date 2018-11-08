@@ -22,33 +22,37 @@ class Nav extends React.Component{
                     </a>
                 </div>
                 <div className='nav__menuItem'>
-                    <a href='#'>
+                    <a href='#aboutUs'>
                         درباره ما
                     </a>
                 </div>
                 <div className='nav__menuItem'>
-                    <a href='#'>
+                    <a href='#features'>
                         ویژگی ما
                     </a>
                 </div>
                 <div className='nav__menuItem'>
-                    <a href='#'>
+                    <a href='#courses'>
                         دوره‌ها
                     </a>
                 </div>
                 <div className='nav__menuItem'>
-                    <a href='#'>
+                    <a href='#departments'>
                         دپارتمان‌ها
                     </a>
                 </div>
                 <div className='nav__menuItem'>
-                    <a href='#'>
-                        نظرات کاربران
+                    <a href='#teachers'>
+                        اساتید
                     </a>
                 </div>
                 <div className='nav__menuItem'>
-                    <a href='#'>
-                        اساتید
+                    <a href='#testimonials'>
+                        نظرات کاربران
+                    </a>
+                </div><div className='nav__menuItem'>
+                    <a href='#contactUs'>
+                        تماس با ما
                     </a>
                 </div>
             </div>

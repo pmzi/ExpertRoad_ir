@@ -6,7 +6,7 @@ class Features extends React.Component{
 
     render(){
         return (
-            <section className='features'>
+            <section id='features' className='features'>
                 <div className='features__container layout'>
                     <header className='features__header'>
                         <h2 className='features__header-title'>

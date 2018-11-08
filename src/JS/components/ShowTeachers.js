@@ -6,7 +6,7 @@ class ShowTeachers extends React.Component{
 
     render(){
         return (
-            <section className='showTeachers'>
+            <section id='teachers' className='showTeachers'>
                 <div className='showTeachers__container layout'>
                     <header className='showTeachers__header'>
                         <h2 className='showTeachers__header-title'>

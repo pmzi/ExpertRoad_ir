@@ -4,7 +4,7 @@ const ContactUsItem = require('./subComponents/ContactUsItem');
 
 class ContactUs extends React.Component{
     render(){
-        return (<section className='contactUs'>
+        return (<section id='contactUs' className='contactUs'>
             <iframe className='contactUs__map' src={this.props.src} frameBorder="0" allowFullScreen></iframe>
             <div className='contactUs__container layout'>
                 <div className='contactUs__contactInfo'>

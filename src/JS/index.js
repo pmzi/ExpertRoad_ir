@@ -1,6 +1,8 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 
+const SmoothScroll =  require('smooth-scroll');
+
 const Nav = require('./components/Nav');
 const MainHeader = require('./components/MainHeader');
 const AboutUs = require('./components/AboutUs');
@@ -26,3 +28,5 @@ const jsx = (<React.Fragment>
 </React.Fragment>);
 
 ReactDOM.render(jsx, document.querySelector("#app"));
+
+new SmoothScroll('a[href*="#"]');
