@@ -21,6 +21,11 @@
         padding: 1rem 1rem;
     }
 
+    &--disabled{
+        pointer-events: none;
+        opacity: 0.3;
+    }
+
     &:active{
         transform: scale(0.95);
     }
