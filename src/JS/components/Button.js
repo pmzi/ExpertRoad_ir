@@ -8,7 +8,7 @@ class Button extends React.Component{
 
         if(this.props.href){
 
-            button = <a href={this.props.href} className={`button ${this.props.isFilled ? 'button--filled' : ''} ${this.props.className?this.props.className:''} ${this.props.disabled?'button--disabled':''}`}>
+            button = <a target={this.props.target?this.props.target:'_self'} href={this.props.href} className={`button ${this.props.isFilled ? 'button--filled' : ''} ${this.props.className?this.props.className:''} ${this.props.disabled?'button--disabled':''}`}>
                 {this.props.text}
             </a>
 
