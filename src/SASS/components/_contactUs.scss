@@ -36,6 +36,7 @@
         min-height: 20rem;
         background-color: rgba(255,255,255,0.8);
         padding: 2rem;
+        pointer-events: all;
 
         @import './subComponents/contactUsItem';
 
