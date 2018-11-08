@@ -17,7 +17,7 @@ class MainHeader extends React.Component{
                     </h4>
                     <div className='mainHeader__captionAction'>
                         <Button href='#' className='mainHeader__action' isFilled={true} text='مشاهده دوره‌ها' />
-                        <Button href='#' className='mainHeader__action' isFilled={false} text='عضویت در خبرنامه' />
+                        <Button href='#subscribe' className='mainHeader__action' isFilled={false} text='عضویت در خبرنامه' />
                     </div>
                 </div>
             </div>
