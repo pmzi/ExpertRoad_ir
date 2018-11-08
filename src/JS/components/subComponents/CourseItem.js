@@ -48,11 +48,26 @@ class CourseItem extends React.Component{
                                 {this.props.duration}
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <i className='material-icons'> 
+                                        event
+                                    </i>
+                                    <span>
+                                        دپارتمان:
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                {this.props.department}
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
                 </div>
                 <footer className='courseItem__footer'>
-                <Button smallPaddingTop={true} className='courseItem__footer-button' href={this.props.link} text='اطلاعات بیشتر و ثبت نام' />
+                    <Button target='_blank' smallPaddingTop={true} className='courseItem__footer-button' href={this.props.link} text='اطلاعات بیشتر و ثبت نام' />
                 </footer>
             </div>
         );
