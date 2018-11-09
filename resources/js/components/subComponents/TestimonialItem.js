@@ -11,7 +11,7 @@ class TestimonialItem extends React.Component{
                 {this.props.name}
             </div>
             <div className='testimonialItem__avatar'>
-                <img className='testimonialItem__avatar-image' src={`dist/images/${this.props.avatar}`} />
+                <img className='testimonialItem__avatar-image' src={`images/${this.props.avatar}`} />
             </div>
         </div>);
     }

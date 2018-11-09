@@ -8,7 +8,7 @@ class CourseItem extends React.Component{
         return (
             <div className='courseItem'>
                 <header className='courseItem__header'>
-                    <img className='courseItem__header-image' src={`dist/images/${this.props.image}`} />
+                    <img className='courseItem__header-image' src={`images/${this.props.image}`} />
                 </header>
                 <div className='courseItem__details'>
                     <table className='courseItem__details-table'>

@@ -30,7 +30,7 @@ class AboutUs extends React.Component{
                     </div>
                     <div className='aboutUs__logoWrapper'>
 
-                        <img className='aboutUs__logo' src='dist/images/logo-1.png' alt='Logo' />
+                        <img className='aboutUs__logo' src='images/logo-1.png' alt='Logo' />
 
                     </div>
 

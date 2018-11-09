@@ -52,7 +52,7 @@ class Features extends React.Component{
                             {this.features}
                         </div>
                         <div className='features__imageWrapper'>
-                            <img src='dist/images/featuresImage.png' className='features__imageWrapper-image' />
+                            <img src='images/featuresImage.png' className='features__imageWrapper-image' />
                         </div>
                     </div>
                 </div>
