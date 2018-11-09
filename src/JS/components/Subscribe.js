@@ -1,5 +1,7 @@
 const React = require('react');
 
+const axios = require('axios');
+
 const Input = require('./Input');
 const Button = require('./Button');
 
@@ -42,15 +44,27 @@ class Subscribe extends React.Component{
                 beingSubmitted: true
             })
             // Making a request to server
-            this.setState({
-                beingSubmitted: false,
-                submitted: true
+            this.subscribeToServer(email).then(()=>{
+                this.setState({
+                    beingSubmitted: false,
+                    submitted: true
+                })
+            }).catch(()=>{
+                this.setState({
+                    beingSubmitted: false,
+                    hasError: true
+                })
             })
+            
         }else{
             this.setState({
                 hasError: true
             })
         }
+    }
+
+    subscribeToServer(email){
+        return axios.post('/subscribe',{email});
     }
 
     get buttonText(){
