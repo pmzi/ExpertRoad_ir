@@ -64,7 +64,7 @@ class Subscribe extends React.Component{
     }
 
     subscribeToServer(email){
-        return axios.post('/subscribe',{email});
+        return axios.post('api/subscribe',{email});
     }
 
     get buttonText(){

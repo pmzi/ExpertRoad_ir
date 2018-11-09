@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', 'HomeController@Index');
+Route::get('/', 'HomeController@index');
