@@ -27,6 +27,11 @@
         display: flex;
 
         min-height: 50rem;
+
+        @media screen and (max-width: map-get($breakpoints, 'medium')) {
+            flex-direction: column;
+        }
+
     }
 
     &__imageWrapper{

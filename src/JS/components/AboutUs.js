@@ -8,7 +8,7 @@ class AboutUs extends React.Component{
         return (
             <section id='aboutUs' className='aboutUs'>
 
-                <div className='aboutUs__container'>
+                <div className='aboutUs__container layout'>
 
                     <div className='aboutUs__contentWrapper'>
 

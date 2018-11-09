@@ -18,6 +18,10 @@
     &__coursesWrapper{
 
         display: flex;
+
+        @media screen and(max-width: map-get($breakpoints, 'medium')) {
+            flex-direction: column;
+        }
         
         @import './subComponents/courseItem';
 
