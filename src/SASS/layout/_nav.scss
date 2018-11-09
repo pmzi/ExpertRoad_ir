@@ -16,6 +16,16 @@
 
     z-index: 10;
 
+    &__collapse{
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        display: none;
+    }
+
     &__socials{
         
         margin-left: auto;
@@ -92,6 +102,36 @@
 
         }
 
+    }
+
+    // Responsive
+
+    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+        &__logo{
+            display: none;
+        }
+        &__socials{
+            margin-right: auto;
+            margin-left: 0;
+        }
+        &__menu{
+            transition-duration: 0.3s;
+            position: fixed;
+            top: 6rem;
+            height: 0;
+            flex-direction: column;
+            justify-content: initial;
+            overflow: hidden;
+            background-color: white;
+            width: 100%;
+            right: 0;
+        }
+        &__menuItem{
+            height: 4rem;
+            &>a{
+                justify-content: center;
+            }
+        }
     }
 
 }

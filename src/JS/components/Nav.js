@@ -2,8 +2,25 @@ const React = require('react');
 
 class Nav extends React.Component{
 
+    constructor(props){
+        super(props);
+        this.state = {
+            showMenu: false,
+            menuItems: 8,
+            menuHeight: 4,
+            style: {
+
+            }
+        }
+    }
+
     render(){
         return (<nav className='nav'>
+            <div onClick={this.handleMenuShow.bind(this)} className='nav__collapse'>
+                <i className='material-icons'>
+                    dehaze
+                </i>
+            </div>
             <div className='nav__socials'>
                 <a href='#' className='nav__singleSocial nav__singleSocial--twitter'>
         
@@ -15,7 +32,7 @@ class Nav extends React.Component{
         
                 </a>
             </div>
-            <div className='nav__menu'>
+            <div style={this.state.style} className={`nav__menu${this.state.showMenu ? ' nav__menu--show' : ''}`}>
                 <div className='nav__menuItem'>
                     <a href='#'>
                         خانه
@@ -60,6 +77,28 @@ class Nav extends React.Component{
                 <img src='' alt='Logo' />
             </div>
         </nav>);
+    }
+
+    componentDidMount(){
+        window.addEventListener('resize',this.hideMenu.bind(this))
+    }
+
+    handleMenuShow(){
+        let showMenu = !this.state.showMenu;
+        let style = {};
+        if (showMenu){
+            style['height'] = this.state.menuItems*this.state.menuHeight+'rem';
+        }
+        this.setState({
+            showMenu,
+            style
+        })
+    }
+
+    hideMenu(){
+        this.setState({
+            showMenu: false
+        })
     }
 
 }
