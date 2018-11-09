@@ -1,0 +1,49 @@
+.featureItem{
+    width: 100%;
+    min-height: 14rem;
+    display: flex;
+
+    margin-bottom: 1rem;
+
+    &:hover .featureItem__iconBorder{
+        border-color: $brand-color;
+        background-color: $brand-color;
+        color: white;
+        box-shadow: 0 0 0.2rem 0 rgba(0,0,0,0.4);
+        transition-duration: 0.3s;
+    }
+
+    &__iconWrapper{
+        align-self: center;
+        flex-basis: 10rem;
+        flex-shrink: 0;
+        padding: 1rem;
+    }
+
+    &__iconBorder{
+        display: flex;
+        width: 100%;
+        height: 8rem;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 50%;
+        transition-duration: 0.3s;
+    }
+
+    &__details{
+        flex-grow: 1;
+
+        &-title{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        &-desc{
+            line-height: 2.4rem;
+            font-size: 1.4rem;
+        }
+
+    }
+
+}

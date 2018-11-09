@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.button{
+    padding: 1.2rem 1rem;
+    border: 0.2rem solid $brand-color;
+
+    transition-duration: 0.5s;
+
+    user-select: none;
+
+    cursor: pointer;
+
+    &--filled, &:hover{
+        background-color: $brand-color;
+        color: white;
+    }
+
+    &--smallPaddingTop{
+        padding: 1rem 1rem;
+    }
+
+    &--disabled{
+        pointer-events: none;
+        opacity: 0.3;
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+
+    &:focus{
+        outline: none;
+    }
+
+}
+a.button{
+    color: white;
+}

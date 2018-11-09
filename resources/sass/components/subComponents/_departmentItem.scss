@@ -1,0 +1,44 @@
+.department{
+    flex-basis: 35rem;
+    min-height: 20rem;
+
+    background-color: #eee;
+
+    padding: 3rem 1rem;
+
+    transition-duration: 0.4s;
+    box-shadow: 0 0 1rem 0.1rem rgba(0,0,0,0.2);
+
+
+    &:hover{
+        box-shadow: 0 0 4rem 0.1rem rgba(0,0,0,0.2);
+    }
+
+    &__header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 4rem 0;
+    }
+
+    &__details{
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+        line-height: 2.4rem;
+        font-size: 1.4rem;
+    }
+
+    &__action{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        font-size: 1.4rem;
+        &-readMore{
+            color: $brand-color;
+        }
+    }
+
+}

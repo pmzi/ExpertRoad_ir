@@ -1,0 +1,30 @@
+.courses{
+    width: 100%;
+    min-height: 30rem;
+
+    &__header{
+        text-align: center;
+        margin-bottom: 10rem;
+
+        &-title{
+            margin-bottom: 6rem;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+    }
+
+    padding-bottom: 4rem;
+
+    &__coursesWrapper{
+
+        display: flex;
+
+        @media screen and(max-width: map-get($breakpoints, 'medium')) {
+            flex-direction: column;
+        }
+        
+        @import './subComponents/courseItem';
+
+    }
+
+}

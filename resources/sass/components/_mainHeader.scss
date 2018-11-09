@@ -1,0 +1,52 @@
+.mainHeader{
+
+    width: 100%;
+    min-height: 51vw;
+
+    display: flex;
+
+    background-image: url($base-url+'images/bg.jpg');
+    background-size: cover;
+
+    &__overlay{
+        width: 100%;
+        background-color: rgba(0,0,0,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__caption{
+        width: 100%;
+        max-width: 62rem;
+        color: #f8f8f8;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    &__captionHeader{
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    &__captionText{
+        text-align: center;
+        line-height: 2.6rem;
+        font-size: 1.4rem;
+    }
+
+    &__captionAction{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 4rem;
+
+        &>a{
+            color: white;
+            &:first-child{
+                margin-left: 1rem;
+            }
+        }
+    }
+
+}

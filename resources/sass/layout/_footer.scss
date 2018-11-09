@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer{
+    width: 100%;
+    height: 6rem;
+    background-color: #1e1e1e;
+    font-size: 1.2rem;
+    color: #8f8f8f;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__copyRight{
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    &__links{
+        margin-left: auto;
+        flex-grow: 1;
+        &-link{
+            color: #8f8f8f;
+            margin: 0 0.5rem;
+            &:hover{
+                color: lighten($color: #8f8f8f, $amount: 10);
+            }
+        }
+    }
+
+    &__brandName{
+        flex-grow: 1;
+        text-align: left;
+    }
+
+}

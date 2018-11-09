@@ -1,0 +1,137 @@
+.nav{
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    box-shadow: 0 0 0.5rem 0rem rgba(0,0,0,0.3);
+
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 0 2rem;
+
+    z-index: 10;
+
+    &__collapse{
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        display: none;
+    }
+
+    &__socials{
+        
+        margin-left: auto;
+        height: 2.4rem;
+
+        display: flex;
+
+    }
+
+    &__singleSocial{
+        width: 2.4rem;
+        height: 2.4rem;
+
+        margin-left: 0.5rem;
+
+        background-size: 100% 100%;
+
+        &--twitter{
+            background-image: url($base-url+'images/socials/twitter.png');
+
+            &:hover{
+                background-image: url($base-url+'images/socials/twitter-hover.png');
+            }
+        }
+
+        &--instagram{
+            background-image: url($base-url+'images/socials/instagram.png');
+
+            &:hover{
+                background-image: url($base-url+'images/socials/instagram-hover.png');
+            }
+        }
+
+        &--telegram{
+            background-image: url($base-url+'images/socials/telegram.png');
+
+            &:hover{
+                background-image: url($base-url+'images/socials/telegram-hover.png');
+            }
+        }
+
+    }
+
+    &__logo{
+        margin-right: auto;
+    }
+
+    &__menu{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        height: 100%;
+    }
+
+    &__menuItem{
+        height: 100%;
+
+        font-size: 1.4rem;
+
+        &>a{
+
+            padding: 0 1.5rem;
+
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            color: $text-color;
+
+            &:hover{
+                color: $brand-color;
+                background-color: $back-color;
+            }
+
+        }
+
+    }
+
+    // Responsive
+
+    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+        &__logo{
+            display: none;
+        }
+        &__socials{
+            margin-right: auto;
+            margin-left: 0;
+        }
+        &__menu{
+            transition-duration: 0.3s;
+            position: fixed;
+            top: 6rem;
+            height: 0;
+            flex-direction: column;
+            justify-content: initial;
+            overflow: hidden;
+            background-color: white;
+            width: 100%;
+            right: 0;
+        }
+        &__menuItem{
+            height: 4rem;
+            &>a{
+                justify-content: center;
+            }
+        }
+    }
+
+}
