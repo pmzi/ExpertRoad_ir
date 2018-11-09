@@ -102,7 +102,7 @@ class Testimonials extends React.Component{
 
     changeTestimonialsWidth(){
         
-        let innerWidth = window.innerWidth > 1120 ? 1120 : window.innerWidth;
+        let innerWidth = window.innerWidth > 1160 ? 1120 : window.innerWidth-40;
         let length = this.state.testimonials.length;
         this.setState({
             slidesWidth: innerWidth*length,
