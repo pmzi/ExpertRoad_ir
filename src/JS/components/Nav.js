@@ -10,6 +10,11 @@ class Nav extends React.Component{
             menuHeight: 4,
             style: {
 
+            },
+            socials: {
+                telegram: '#',
+                instagram: '#',
+                twiiter: '#'
             }
         }
     }
@@ -22,13 +27,13 @@ class Nav extends React.Component{
                 </i>
             </div>
             <div className='nav__socials'>
-                <a href='#' className='nav__singleSocial nav__singleSocial--twitter'>
+                <a href={this.state.socials.twiiter} target='_blank' className='nav__singleSocial nav__singleSocial--twitter'>
         
                 </a>
-                <a href='#' className='nav__singleSocial nav__singleSocial--instagram'>
+                <a href={this.state.socials.instagram} target='_blank' className='nav__singleSocial nav__singleSocial--instagram'>
         
                 </a>
-                <a href='#' className='nav__singleSocial nav__singleSocial--telegram'>
+                <a href={this.state.socials.telegram} target='_blank' className='nav__singleSocial nav__singleSocial--telegram'>
         
                 </a>
             </div>
