@@ -44,11 +44,18 @@ class Subscribe extends React.Component{
                 beingSubmitted: true
             })
             // Making a request to server
-            this.subscribeToServer(email).then(()=>{
-                this.setState({
-                    beingSubmitted: false,
-                    submitted: true
-                })
+            this.subscribeToServer(email).then((data)=>{
+                if(data.status == 1){
+                    this.setState({
+                        beingSubmitted: false,
+                        submitted: true
+                    })
+                }else{
+                    this.setState({
+                        beingSubmitted: false,
+                        hasError: true
+                    })
+                }
             }).catch(()=>{
                 this.setState({
                     beingSubmitted: false,
