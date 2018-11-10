@@ -132,6 +132,9 @@
                 justify-content: center;
             }
         }
+        &__collapse{
+            display: flex;
+        }
     }
 
 }

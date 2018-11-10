@@ -85,6 +85,7 @@ class Nav extends React.Component{
     }
 
     componentDidMount(){
+        window.addEventListener('load',this.hideMenu.bind(this))
         window.addEventListener('resize',this.hideMenu.bind(this))
     }
 
