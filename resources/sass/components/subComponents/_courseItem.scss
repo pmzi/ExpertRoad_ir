@@ -9,6 +9,7 @@
 
     @media screen and (max-width: map-get($breakpoints, 'medium')){
         margin-left: 0;
+        max-width: initial;
     }
 
     &:last-child{
