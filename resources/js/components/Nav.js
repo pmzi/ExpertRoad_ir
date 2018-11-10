@@ -6,7 +6,7 @@ class Nav extends React.Component{
         super(props);
         this.state = {
             showMenu: false,
-            menuItems: 8,
+            menuItems: 9,
             menuHeight: 4,
             style: {
 
@@ -75,6 +75,11 @@ class Nav extends React.Component{
                 </div><div className='nav__menuItem'>
                     <a href='#contactUs'>
                         تماس با ما
+                    </a>
+                </div>
+                <div className='nav__menuItem'>
+                    <a target='_blank' href='/blog'>
+                        بلاگ
                     </a>
                 </div>
             </div>
