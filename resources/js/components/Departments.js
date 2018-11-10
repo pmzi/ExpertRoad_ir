@@ -81,6 +81,7 @@ class Departments extends React.Component{
 
     componentDidMount(){
         this.fetchDepartments().then(this.changeSlidesWidth.bind(this))
+        window.addEventListener('load',this.changeSlidesWidth.bind(this))
         window.addEventListener('resize',this.changeSlidesWidth.bind(this))
     }
 
@@ -129,10 +130,12 @@ class Departments extends React.Component{
         let margin = (innerWidth - itemCount*this.state.itemWidth)/(itemCount*2);
         let slidesWidth = (this.state.departments.length * this.state.itemWidth)+(margin * (this.state.departments.length*2));
         let maxSlides = (this.state.departments.length - itemCount)+1;
+        let itemWidth = innerWidth < 420 ? 280 : 350;
         this.setState({
             slidesWidth,
             margin,
-            maxSlides
+            maxSlides,
+            itemWidth
         })
         this.resetSlideCount();
     }
